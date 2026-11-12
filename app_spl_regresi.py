@@ -164,5 +164,5 @@ if file is not None:
             nilai_baru.append(kol.number_input(nama, value=float(df[nama].mean()))) 
         x_baru = np.array(([1.0] if h["intersep"] else []) + nilai_baru) 
         st.success(f"Prediksi {h['target']} = {float(x_baru @ w):.2f}") 
-else: Ks
+else:
     st.info("Silakan unggah file CSV/Excel terlebih dahulu. Contoh: data_rumah.csv") 
